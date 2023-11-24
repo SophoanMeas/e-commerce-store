@@ -23,7 +23,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
     // const previewModal = usePreviewModal();
 
     return (
-        <div onClick={handleClick} className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4">
+        <div className="bg-white group rounded-xl border p-3 space-y-4">
             {/* Image & actions */}
             <div className="aspect-square rounded-xl bg-gray-100 relative">
                 <Image
@@ -33,9 +33,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
                     className="aspect-square object-cover rounded-md"
                 />
                 <div className="opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5">
-                    <div className="flex gap-x-6 justify-center">
+                    <div className="flex gap-x-6 justify-center cursor-pointer ">
                         <IconButton
-                            onClick={() => { }}
+                            onClick={handleClick}
                             icon={<Expand size={20} className="text-gray-600" />}
                         />
                         <IconButton
