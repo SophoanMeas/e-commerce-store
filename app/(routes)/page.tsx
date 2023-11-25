@@ -6,7 +6,7 @@ import ProductList from "@/app/components/getStoreItems/product-list";
 
 export const revalidate = 0;
 
-const Page = async () => {
+const ProductPage = async () => {
   const billboard = await getBillboard("655db51c5f39e1d7a3a2849e");
   const products = await getProducts({ isFeatured: true })
   return (
@@ -24,4 +24,4 @@ const Page = async () => {
   )
 }
 
-export default Page
+export default ProductPage
