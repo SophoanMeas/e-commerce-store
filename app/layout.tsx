@@ -4,6 +4,7 @@ import './globals.css'
 
 import Footer from '@/app/components/footer/footer'
 import Navbar from '@/app/components/navbar/navbar'
+import ModalProvider from '@/providers/modal-provider'
 
 const inter = Urbanist({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <ModalProvider />
         <Navbar />
         {children}
         <Footer />
