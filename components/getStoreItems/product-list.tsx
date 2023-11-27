@@ -1,6 +1,6 @@
 import { Product } from "@/app/types/types";
-import NoResults from "@/app/components/ui/no-results";
-import ProductCard from "@/app/components/ui/product-card";
+import NoResults from "@/components/ui/no-results";
+import ProductCard from "@/components/ui/product-card";
 
 interface ProductListProps {
     title: string;
