@@ -1,9 +1,9 @@
 import getProduct from "@/actions/get-product";
 import getProducts from "@/actions/get-products";
-import Gallery from "@/app/components/gallery";
-import ProductList from "@/app/components/getStoreItems/product-list";
-import Info from "@/app/components/info/info";
-import Container from "@/app/components/ui/container";
+import Gallery from "@/components/gallery";
+import ProductList from "@/components/getStoreItems/product-list";
+import Info from "@/components/info/info";
+import Container from "@/components/ui/container";
 
 interface ProductPageProps {
     params: {
