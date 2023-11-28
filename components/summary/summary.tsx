@@ -45,9 +45,11 @@ const Summary = () => {
                 </div>
             </div>
             <br />
-            <Button onClick={onCheckout} className="w-[150px] mt-6 mx-auto">
+            <div className="border-t border-gray-200 p-6">
+            <Button onClick={onCheckout} className="w-full mt-6 mx-auto">
             Checkout
             </Button>
+            </div>
         </div>
     );
 }
